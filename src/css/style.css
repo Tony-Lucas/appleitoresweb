@@ -1,0 +1,77 @@
+
+@font-face{
+    font-family:"Bold";
+    src: url("../fonts//Ubuntu-Bold.ttf")
+}
+
+@font-face{
+    font-family:"Regular";
+    src: url("../fonts//Ubuntu-Regular.ttf")
+}
+
+@font-face{
+    font-family:"Medium";
+    src: url("../fonts//Ubuntu-Medium.ttf")
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.bold{
+    font-family: Bold;
+}
+
+.regular{
+    font-family: Regular;
+}
+
+.medium{
+    font-family: Medium;
+}
+
+.alturamaxima{
+    height: 100vh;
+}
+
+.metadealtura{
+    height: 50vh;
+}
+
+.larguramaxima{
+    width: 100vw;
+}
+
+.metadelargura{
+    width: 50vw;
+}
+
+.color-titulo-login{
+    color: #616161
+}
+
+.size-titulo-login{
+    font-size: 1.70em
+}
+
+.bg-cinza-claro{
+    background-color: #F6F6F6;
+}
+
+.bg-primario{
+    background-color: #8962F8;
+}
