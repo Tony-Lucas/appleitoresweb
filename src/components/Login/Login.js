@@ -6,7 +6,7 @@ import Loader from '../../svg/tail-spin.svg';
 export default function Login() {
 
     const [showError, setShowError] = useState(false)
-    const [showLoader,setShowLoader] = useState(false)
+    const [showLoader, setShowLoader] = useState(false)
 
     const realizaLogin = async () => {
         const valueEmail = document.getElementById('email').value;
@@ -21,13 +21,13 @@ export default function Login() {
         })
         const json = await result.json()
         setShowLoader(false)
-        if(json.success){
+        if (json.success) {
             window.location.href = "/paginainicial"
-        }else{
+        } else {
             setShowError(true)
             setTimeout(() => {
                 setShowError(false)
-            },3000)
+            }, 3000)
         }
     }
 
@@ -58,9 +58,9 @@ export default function Login() {
                     </div>
                     {showLoader && (
                         <div className="row justify-content-end">
-                            
-                            <img src={Loader} className="img-fluid mt-4"/>
-                            
+
+                            <img src={Loader} className="img-fluid mt-4" />
+
                         </div>
                     )}
                     {showError && (
@@ -68,6 +68,9 @@ export default function Login() {
                             <span className="bg-danger text-white rounded text-center mt-3 pt-1 pb-1 pl-3 pr-3">Credenciais Incorretas</span>
                         </div>
                     )}
+                    <div className="mt-3 text-center">
+                        <span className="regular">Ainda não é cadastrado ?<a href="/cadastro"> Clique Aqui!</a></span>
+                    </div>
                 </div>
             </div>
         </div>

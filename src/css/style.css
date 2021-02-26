@@ -40,6 +40,10 @@ label:focus,
     font-family: Regular;
 }
 
+.cursor{
+    cursor: pointer;
+}
+
 .medium{
     font-family: Medium;
 }
@@ -70,6 +74,11 @@ label:focus,
 
 .bg-cinza-claro{
     background-color: #F6F6F6;
+}
+
+.color-input{
+    color:#B6B5B5;
+    opacity:0.5
 }
 
 .bg-primario{
